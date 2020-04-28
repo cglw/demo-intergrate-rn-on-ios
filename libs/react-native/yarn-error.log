@@ -1,0 +1,31 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/namle/Library/Android/sdk/tools:/Users/namle/Library/Android/sdk/platform-tools:/usr/local/apache-ant-1.10.7/bin:/Applications/netbeans/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/namle/.gradle/wrapper/dists/gradle-5.5-all/byeise1led9a3w3p149d02kfj/gradle-5.5/bin:/usr/local/go/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.16.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/namle/Nam/projects/DemoIntergrateRNOnIOs/libs/react-native/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
