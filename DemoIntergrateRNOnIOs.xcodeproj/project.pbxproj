@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9546E77C23CAA64CCBE6886D /* libPods-DemoIntergrateRNOnIOs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F7EA7311BF9FBEEF083DD3 /* libPods-DemoIntergrateRNOnIOs.a */; };
+		F8253D182463BA5D00D88144 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8253D172463BA5D00D88144 /* File.swift */; };
 		F8C715752458130C000B7166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C715742458130C000B7166 /* AppDelegate.m */; };
 		F8C715782458130C000B7166 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C715772458130C000B7166 /* SceneDelegate.m */; };
 		F8C7157B2458130C000B7166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C7157A2458130C000B7166 /* ViewController.m */; };
@@ -17,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1FD35B69760F76AE9C270D /* Pods-DemoIntergrateRNOnIOs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoIntergrateRNOnIOs.release.xcconfig"; path = "Target Support Files/Pods-DemoIntergrateRNOnIOs/Pods-DemoIntergrateRNOnIOs.release.xcconfig"; sourceTree = "<group>"; };
+		42F7EA7311BF9FBEEF083DD3 /* libPods-DemoIntergrateRNOnIOs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoIntergrateRNOnIOs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD101A9D73DC45F253B5956B /* Pods-DemoIntergrateRNOnIOs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoIntergrateRNOnIOs.debug.xcconfig"; path = "Target Support Files/Pods-DemoIntergrateRNOnIOs/Pods-DemoIntergrateRNOnIOs.debug.xcconfig"; sourceTree = "<group>"; };
+		F8253D162463BA5C00D88144 /* DemoIntergrateRNOnIOs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoIntergrateRNOnIOs-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8253D172463BA5D00D88144 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F8C715702458130C000B7166 /* DemoIntergrateRNOnIOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoIntergrateRNOnIOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C715732458130C000B7166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C715742458130C000B7166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9546E77C23CAA64CCBE6886D /* libPods-DemoIntergrateRNOnIOs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6F68B2D25A2480E16495E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD101A9D73DC45F253B5956B /* Pods-DemoIntergrateRNOnIOs.debug.xcconfig */,
+				3A1FD35B69760F76AE9C270D /* Pods-DemoIntergrateRNOnIOs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		851CABD49A602375ACC5EE9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F7EA7311BF9FBEEF083DD3 /* libPods-DemoIntergrateRNOnIOs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8C715672458130C000B7166 = {
 			isa = PBXGroup;
 			children = (
+				F8253D172463BA5D00D88144 /* File.swift */,
 				F8C715722458130C000B7166 /* DemoIntergrateRNOnIOs */,
 				F8C715712458130C000B7166 /* Products */,
+				1F6F68B2D25A2480E16495E4 /* Pods */,
+				851CABD49A602375ACC5EE9D /* Frameworks */,
+				F8253D162463BA5C00D88144 /* DemoIntergrateRNOnIOs-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C7158924581310000B7166 /* Build configuration list for PBXNativeTarget "DemoIntergrateRNOnIOs" */;
 			buildPhases = (
+				CC1142599C7ADC210A30133E /* [CP] Check Pods Manifest.lock */,
 				F8C7156C2458130C000B7166 /* Sources */,
 				F8C7156D2458130C000B7166 /* Frameworks */,
 				F8C7156E2458130C000B7166 /* Resources */,
@@ -107,6 +137,7 @@
 				TargetAttributes = {
 					F8C7156F2458130C000B7166 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -141,11 +172,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CC1142599C7ADC210A30133E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoIntergrateRNOnIOs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8C7156C2458130C000B7166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8253D182463BA5D00D88144 /* File.swift in Sources */,
 				F8C7157B2458130C000B7166 /* ViewController.m in Sources */,
 				F8C715752458130C000B7166 /* AppDelegate.m in Sources */,
 				F8C7158624581310000B7166 /* main.m in Sources */,
@@ -285,8 +342,10 @@
 		};
 		F8C7158A24581310000B7166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD101A9D73DC45F253B5956B /* Pods-DemoIntergrateRNOnIOs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ55B72FB8;
 				INFOPLIST_FILE = DemoIntergrateRNOnIOs/Info.plist;
@@ -296,14 +355,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = namle.DemoIntergrateRNOnIOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoIntergrateRNOnIOs-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F8C7158B24581310000B7166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1FD35B69760F76AE9C270D /* Pods-DemoIntergrateRNOnIOs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ55B72FB8;
 				INFOPLIST_FILE = DemoIntergrateRNOnIOs/Info.plist;
@@ -313,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = namle.DemoIntergrateRNOnIOs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoIntergrateRNOnIOs-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
