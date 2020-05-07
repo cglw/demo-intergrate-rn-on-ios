@@ -348,6 +348,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ55B72FB8;
+        ENABLE_BITCODE = NO;
+        GCC_PREPROCESSOR_DEFINITIONS = (
+          "$(inherited)",
+          "FB_SONARKIT_ENABLED=1"
+        );
 				INFOPLIST_FILE = DemoIntergrateRNOnIOs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
